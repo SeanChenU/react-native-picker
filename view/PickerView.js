@@ -51,8 +51,8 @@ class PickerView extends BaseComponent {
         this.onPanResponderEnd = this.onPanResponderEnd.bind(this);
 
         //這裏固定在屏幕底部，所以直接寫死touch區域即可。
-        this.parentTopY = this.mScreenHeight - props.itemHeight * 5 - this.getSize(15);
-        this.parentBottomY = this.mScreenHeight - this.getSize(15);
+        this.parentTopY = 0;
+        this.parentBottomY = 1000;
     }
 
     shouldComponentUpdate(nextProps, nextState) {
